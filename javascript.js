@@ -16,6 +16,8 @@ function makeGridSize(number){
         square.style.width = `${squareSize}px`;
         square.style.height = `${squareSize}px`;
 
+        const color = Math.floor(Math.random() * 256);
+
         square.addEventListener("mouseenter", () => {
         square.style.backgroundColor = "black";
         });

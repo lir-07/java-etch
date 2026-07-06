@@ -1,1 +1,13 @@
-const grids = document.createElement("div");
+const container = document.getElementById("container");
+
+for(let i = 0; i < 256; i++){
+    const square = document.createElement("div");
+    square.classList.add("square");
+
+    square.addEventListener("mouseenter", () => {
+        square.style.backgroundColor = "black";
+    });
+
+    container.appendChild(square);
+}
+

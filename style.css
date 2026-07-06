@@ -1,3 +1,28 @@
-div{
-    display: flex;
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 649px;
+  height: 649px;
+  border: 2px solid black;
+}
+
+.square {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  transition: background-color 0.5s;
 }
